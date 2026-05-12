@@ -1,24 +1,98 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>MiniShop</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniShop</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<h1>MiniShop</h1>
+    <header>
+        <div class="logo">MiniShop</div>
 
-<div class="products">
-  <div class="card">
-    <img src="https://via.placeholder.com/200">
-    <h2>Headphones</h2>
-    <p>₹1999</p>
-    <button onclick="addToCart()">Add to Cart</button>
-  </div>
-</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
 
-<h3 id="cart">Cart: 0</h3>
+        <div class="cart-box">
+            🛒 Cart: <span id="cart">0</span>
+        </div>
+    </header>
 
-<script src="script.js"></script>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Discover Amazing Products</h1>
+            <p>Modern shopping experience with premium quality products.</p>
+            <button>Shop Now</button>
+        </div>
+    </section>
+
+
+    <section class="products-section">
+
+        <h2>Featured Products</h2>
+
+        <div class="products">
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500">
+
+                <h3>Wireless Headphones</h3>
+
+                <p class="price">₹2,999</p>
+
+                <button onclick="addToCart()">
+                    Add to Cart
+                </button>
+            </div>
+
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=500">
+
+                <h3>iPhone</h3>
+
+                <p class="price">₹79,999</p>
+
+                <button onclick="addToCart()">
+                    Add to Cart
+                </button>
+            </div>
+
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500">
+
+                <h3>Smart Watch</h3>
+
+                <p class="price">₹4,999</p>
+
+                <button onclick="addToCart()">
+                    Add to Cart
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+        <p>© 2026 MiniShop. All Rights Reserved.</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
 </body>
 </html>
