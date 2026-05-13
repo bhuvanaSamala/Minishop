@@ -3,21 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MiniShop</title>
+    <title>Products - MiniShop</title>
 
     <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
+    <!-- Header -->
     <header>
+
         <div class="logo">MiniShop</div>
 
         <nav>
-            <a href="#">Home</a>
+            <a href="index.html">Home</a>
             <a href="products.html">Products</a>
             <a href="#">About</a>
             <a href="#">Contact</a>
@@ -26,25 +29,21 @@
         <div class="cart-box">
             🛒 Cart: <span id="cart">0</span>
         </div>
+
     </header>
 
+    <!-- Products Section -->
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Discover Amazing Products</h1>
-            <p>Modern shopping experience with premium quality products.</p>
-            <button>Shop Now</button>
-        </div>
-    </section>
+    <section class="products-page">
 
-
-    <section class="products-section">
-
-        <h2>Featured Products</h2>
+        <h1>All Products</h1>
 
         <div class="products">
 
+            <!-- Product 1 -->
+
             <div class="card">
+
                 <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500">
 
                 <h3>Wireless Headphones</h3>
@@ -54,10 +53,13 @@
                 <button onclick="addToCart()">
                     Add to Cart
                 </button>
+
             </div>
 
+            <!-- Product 2 -->
 
             <div class="card">
+
                 <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=500">
 
                 <h3>iPhone</h3>
@@ -67,10 +69,13 @@
                 <button onclick="addToCart()">
                     Add to Cart
                 </button>
+
             </div>
 
+            <!-- Product 3 -->
 
             <div class="card">
+
                 <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500">
 
                 <h3>Smart Watch</h3>
@@ -80,17 +85,66 @@
                 <button onclick="addToCart()">
                     Add to Cart
                 </button>
+
+            </div>
+
+            <!-- Product 4 -->
+
+            <div class="card">
+
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500">
+
+                <h3>Nike Shoes</h3>
+
+                <p class="price">₹5,499</p>
+
+                <button onclick="addToCart()">
+                    Add to Cart
+                </button>
+
+            </div>
+
+            <!-- Product 5 -->
+
+            <div class="card">
+
+                <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad?w=500">
+
+                <h3>Gaming Mouse</h3>
+
+                <p class="price">₹1,499</p>
+
+                <button onclick="addToCart()">
+                    Add to Cart
+                </button>
+
+            </div>
+
+            <!-- Product 6 -->
+
+            <div class="card">
+
+                <img src="https://images.unsplash.com/photo-1580910051074-3eb694886505?w=500">
+
+                <h3>Laptop</h3>
+
+                <p class="price">₹59,999</p>
+
+                <button onclick="addToCart()">
+                    Add to Cart
+                </button>
+
             </div>
 
         </div>
 
     </section>
 
+    <!-- Footer -->
 
     <footer>
         <p>© 2026 MiniShop. All Rights Reserved.</p>
     </footer>
-
 
     <script src="script.js"></script>
 
