@@ -1,0 +1,10 @@
+let cartCount = 0;
+
+function addToCart() {
+
+    cartCount++;
+
+    document.getElementById('cart').innerText = cartCount;
+
+    alert('Product Added To Cart');
+}
