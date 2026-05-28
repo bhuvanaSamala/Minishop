@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: minishop-config
+  namespace: minishop
+data:
+  APP_NAME: "Minishop"
+  APP_ENV: "production"
+  APP_PORT: "5000"

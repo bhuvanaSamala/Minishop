@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  ecommerce-app:
+    build: .
+    container_name: ecommerce_container
+
+    ports:
+      - "5002:5000"
+
+    environment:
+      - NODE_ENV=production
+      - PORT=5002
+      - MONGODB_URL=mongodb://mongo:27017/ecommerce
+
+    depends_on:
+      - mongo
+
+    restart: always
+
+  mongo:
+    image: mongo:latest
+    container_name: mongo_container
+
+    ports:
+      - "27017:27017"
+
+    volumes:
+      - mongo_data:/data/db
+
+volumes:
+  mongo_data:
